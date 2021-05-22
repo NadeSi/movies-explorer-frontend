@@ -1,0 +1,17 @@
+.divider {
+    height: 1px;
+    width: 100%;
+    /*left: 70px;*/
+    /*top: 160px;*/
+    /*border-radius: 0;*/
+
+    background: var(--primary-color);
+}
+
+.divider_primary{
+
+}
+
+.divider_secondary{
+    background: var(--secondary-color);
+}

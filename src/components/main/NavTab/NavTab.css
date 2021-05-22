@@ -1,0 +1,35 @@
+.nav-tab {
+    background-color: var(--secondary-background-color);
+}
+
+.nav-tab__content{
+    padding: 24px 0;
+}
+
+.nav-tab__links {
+    gap: 40px;
+}
+
+.nav-tab__link {
+    display: flex;
+    align-content: flex-start;
+
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 16px;
+    letter-spacing: 0;
+}
+
+@media all and (max-width: 420px) {
+    .nav-tab {
+        padding: 25px 0;
+    }
+    .nav-tab__links {
+        gap: 24px;
+    }
+    .nav-tab__link {
+        font-size: 11px;
+    }
+}
+

@@ -1,0 +1,19 @@
+.about-project{
+    --section-top-side: 110px;
+
+    background-color: var(--primary-background-color);
+    padding: var(--section-top-side) var(--section-indent-side);
+}
+
+@media all and (max-width: 768px) {
+    .about-project {
+        --section-top-side: 90px;
+    }
+}
+
+@media all and (max-width: 420px) {
+    .about-project {
+        --section-top-side: 70px;
+    }
+}
+
