@@ -1,0 +1,41 @@
+.account-button{
+    padding: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: linear-gradient(
+            91deg
+            ,transparent 50%,var(--tertiary-similar-color) 0);
+    background-size: 200% 100%;
+    background-position: 0 0;
+    transition: background-position .5s ease-out;
+    min-height: 30px;
+}
+
+.account-button:hover{
+    background-position: 100% 0;
+}
+
+.account-button__text{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+
+    margin-right: 13px;
+    margin-left: 9px;
+}
+
+.account-button__icon{
+    background-color: var(--tertiary-similar-color);
+    width: 30px;
+    height: 30px;
+
+    border-radius: 6px;
+
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}

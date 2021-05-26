@@ -1,0 +1,21 @@
+.button_type_outline{
+    color: var(--primary-text-color);
+
+    background-color: transparent;
+
+    line-height: 15px;
+    letter-spacing: 0px;
+    text-align: center;
+
+    border: 1px solid var(--secondary-color);
+    border-radius: 5px;
+
+    height: 36px;
+    width: 320px;
+}
+
+@media all and (max-width: 420px) {
+    .button_type_outline {
+        width: 240px;
+    }
+}

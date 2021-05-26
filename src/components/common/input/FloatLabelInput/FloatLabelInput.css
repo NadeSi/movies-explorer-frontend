@@ -1,0 +1,38 @@
+.float-label-input {
+    text-align: left;
+    margin-bottom: 24px;
+}
+
+.float-label-input__label {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 10px;
+    line-height: 12px;
+
+    color: var(--secondary-text-color);
+}
+
+.float-label-input__input{
+    width: 100%;
+
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+
+    color: var(--primary-text-color);
+    box-sizing: border-box;
+
+    background-color: transparent;
+
+    padding-bottom: 10px;
+
+    border: none;
+    border-bottom: 1px solid var(--secondary-color);
+    outline: none;
+}
+
+.float-label-input__input.input-component__input-error{
+    color: var(--error-color);
+}
+

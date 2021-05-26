@@ -1,0 +1,31 @@
+.section{
+
+}
+
+.section__content{
+    max-width: var(--section-content-width);
+    margin: auto;
+}
+
+.section__header{
+    margin: 0;
+    margin-bottom: 23px;
+
+    font-family: Inter, Helvetica, sans-serif;;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 27px;
+    letter-spacing: -0.04em;
+
+    color: var(--primary-text-color)
+}
+
+@media all and (max-width: 420px) {
+    .section__header {
+        font-size: 18px;
+        line-height: 22px;
+
+        margin-bottom: 28px;
+    }
+}

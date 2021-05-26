@@ -1,0 +1,17 @@
+.movies{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+@media all and (max-width: 768px) {
+    .movies {
+        --section-indent-side: 30px;
+    }
+}
+
+@media all and (max-width: 420px) {
+    .movies {
+        --section-indent-side: 14px;
+    }
+}

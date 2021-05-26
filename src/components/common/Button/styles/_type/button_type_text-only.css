@@ -1,0 +1,8 @@
+.button_type_text-only{
+    color: var(--primary-text-color);
+
+    background-color: transparent;
+
+    padding-left: 0;
+    padding-right: 0;
+}

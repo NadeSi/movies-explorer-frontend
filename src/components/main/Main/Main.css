@@ -1,0 +1,16 @@
+.main{
+    --app--background-color: var(--complementary-background-color);
+    background: var(--app--background-color);
+}
+
+@media all and (max-width: 768px) {
+    .main {
+        --section-indent-side: 50px;
+    }
+}
+
+@media all and (max-width: 420px) {
+    .main {
+        --section-indent-side: 18px;
+    }
+}

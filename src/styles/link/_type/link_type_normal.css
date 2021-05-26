@@ -1,0 +1,16 @@
+.link_type_normal{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+
+    text-decoration: none;
+    color: var(--complementary-similar-color)
+}
+
+@media all and (max-width: 420px) {
+    .link_type_normal {
+        font-size: 12px;
+        line-height: 15px;
+    }
+}
