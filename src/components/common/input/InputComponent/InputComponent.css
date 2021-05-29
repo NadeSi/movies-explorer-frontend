@@ -1,4 +1,9 @@
 .input-component{
+    position: relative;
+    text-align: right;
+}
+
+.input-component__container{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -29,24 +34,6 @@
 
     border: none;
     outline: none;
-
-    /*width: 100%;*/
-
-    /*font-style: normal;*/
-    /*font-weight: 500;*/
-    /*font-size: 14px;*/
-    /*line-height: 17px;*/
-
-    /*color: var(--primary-text-color);*/
-    /*box-sizing: border-box;*/
-
-    /*background-color: transparent;*/
-
-    /*padding-bottom: 10px;*/
-
-    /*border: none;*/
-    /*border-bottom: 1px solid var(--secondary-color);*/
-    /*outline: none;*/
 }
 
 .input-component__input-error{

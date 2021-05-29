@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from 'react';
+import React from 'react';
 import PropTypes from 'prop-types';
 import {useHistory} from 'react-router-dom';
 
@@ -8,6 +8,8 @@ import MenuButton from '../MenuButton/MenuButton';
 import Navigation from '../Navigation/Navigation';
 import NavigationLink from '../NavigationLink/NavigationLink';
 import HeaderLogo from '../HeaderLogo/HeaderLogo';
+
+import {ROUTES} from '../../../utils/const/routes';
 
 import './Header.css';
 
@@ -45,10 +47,10 @@ function Header(props) {
           </>
         ) : (
           <div className="header__panel header__panel-button">
-            <Button className="button_type_text-only" onClick={() => goToLink('/signup')}>
+            <Button className="button_type_text-only" onClick={() => goToLink(ROUTES.SIGNUP)}>
               Регистрация
             </Button>
-            <Button onClick={() => goToLink('/signin')}>Войти</Button>
+            <Button onClick={() => goToLink(ROUTES.SIGNIN)}>Войти</Button>
           </div>
         )}
       </div>

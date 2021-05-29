@@ -36,7 +36,7 @@
     align-items: flex-end;
 }
 
-.page-not-found__link{
+.page-not-found__button{
     margin-bottom: 60px;
 }
 
@@ -60,7 +60,7 @@
     .page-not-found__link-container{
         align-items: flex-end;
     }
-    .page-not-found__link {
+    .page-not-found__button {
         margin-bottom: 30px;
     }
 }

@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from 'react';
+import React from 'react';
 import PropTypes from 'prop-types';
 
 import {ReactComponent as CloseIcon} from '../../../images/close-icon.svg';

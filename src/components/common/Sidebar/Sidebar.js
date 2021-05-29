@@ -1,8 +1,6 @@
 import React, {useEffect} from 'react';
 import PropTypes from 'prop-types';
 
-import {ReactComponent as CloseIcon} from '../../../images/close-icon.svg';
-
 import Navigation from '../Navigation/Navigation';
 import NavigationLink from '../NavigationLink/NavigationLink';
 import AccountButton from '../AccountButton/AccountButton';

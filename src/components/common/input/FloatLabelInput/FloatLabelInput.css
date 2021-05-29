@@ -1,6 +1,9 @@
 .float-label-input {
-    text-align: left;
     margin-bottom: 24px;
+}
+
+.float-label-input__container{
+    text-align: left;
 }
 
 .float-label-input__label {

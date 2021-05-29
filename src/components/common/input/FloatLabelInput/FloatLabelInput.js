@@ -10,6 +10,7 @@ function FloatLabelInput(props) {
     <InputComponent
       {...props}
       className="float-label-input"
+      classNameContainer="float-label-input__container"
       classNameLabel="float-label-input__label"
       classNameInput="float-label-input__input"
     />
@@ -22,7 +23,6 @@ FloatLabelInput.propTypes = {
   type: PropTypes.string,
   className: PropTypes.string,
   label: PropTypes.string,
-  // children: PropTypes.element,
   onChange: PropTypes.func,
 };
 

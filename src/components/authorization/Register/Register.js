@@ -1,27 +1,36 @@
-import React, {useState, useEffect} from 'react';
+import React from 'react';
 import PropTypes from 'prop-types';
-import {useHistory, withRouter} from 'react-router-dom';
+import {withRouter} from 'react-router-dom';
 
 import AuthorizationForm from '../AuthorizationForm/AuthorizationForm';
 import FloatLabelInput from '../../common/input/FloatLabelInput/FloatLabelInput';
 
+import {ROUTES} from '../../../utils/const/routes';
+import {COMPONENTS_TEXT} from '../../../utils/const/components-text';
+
 import './Register.css';
 
 function Register(props) {
+  const {onRegister, ...rest} = props;
+
   return (
     <AuthorizationForm
-      // showHeader={true}
-      showPassword={true}
+      title={COMPONENTS_TEXT.REGISTER_TITLE}
+      submitText={COMPONENTS_TEXT.REGISTER_SUBMIT}
+      text={COMPONENTS_TEXT.REGISTER_TEXT}
+      linkText={COMPONENTS_TEXT.LOGIN_SUBMIT}
+      link={ROUTES.SIGNIN}
       inputElement={FloatLabelInput}
-      title={'Добро пожаловать!'}
-      submitText={'Зарегистрироваться'}
-      text={'Уже зарегистрированы?'}
-      linkText={'Войти'}
-      link={'/signin'}
+      showName={true}
+      showPassword={true}
+      onSubmit={onRegister}
+      {...rest}
     />
   );
 }
 
-Register.propTypes = {};
+Register.propTypes = {
+  onRegister: PropTypes.func,
+};
 
 export default withRouter(Register);
