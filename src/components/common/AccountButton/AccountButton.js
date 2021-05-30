@@ -4,6 +4,7 @@ import {useHistory} from 'react-router-dom';
 
 import {ReactComponent as AccountIcon} from '../../../images/account-icon.svg';
 import Button from '../Button/Button';
+import {ROUTES} from '../../../utils/const/routes';
 
 import './AccountButton.css';
 
@@ -11,7 +12,7 @@ function AccountButton(props) {
   const history = useHistory();
 
   const goToAccountPage = () => {
-    history.push('/profile');
+    history.push(ROUTES.PROFILE);
   };
 
   return (

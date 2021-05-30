@@ -1,25 +1,25 @@
-import React, {useState, useEffect} from 'react';
+import React from 'react';
 import PropTypes from 'prop-types';
-import {useHistory, withRouter} from 'react-router-dom';
+import {withRouter} from 'react-router-dom';
 
-import SearchForm from '../SearchForm/SearchForm';
-import MoviesCardList from '../MoviesCardList/MoviesCardList';
-import Header from '../../common/Header/Header';
-import Footer from '../../common/Footer/Footer';
+import MoviesContainer from '../MoviesContainer/MoviesContainer';
 
 import './Movies.css';
 
 function Movies(props) {
   return (
     <main className="movies">
-      <Header loggedIn={true} />
-      <SearchForm />
-      <MoviesCardList />
-      <Footer />
+      <MoviesContainer {...props} useButtonLoadMore={true} />
     </main>
   );
 }
 
-Movies.propTypes = {};
+Movies.propTypes = {
+  loggedIn: PropTypes.bool,
+  showPopupMessage: PropTypes.func,
+  movies: PropTypes.array,
+  savedMovies: PropTypes.array,
+  onChangeFavorite: PropTypes.func,
+};
 
 export default withRouter(Movies);

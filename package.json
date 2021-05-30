@@ -3,10 +3,11 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "start": "react-scripts start",
+    "start": "set PORT=6060 && react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "deploy": "npm run build && scp -r ./build/* nade@84.201.181.210:/home/nade/diploma/movies-explorer-frontend"
   },
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.4",
@@ -19,7 +20,6 @@
     "web-vitals": "^1.0.1"
   },
   "devDependencies": {
-    "dotenv": "^8.2.0",
     "eslint": "^7.9.0",
     "eslint-config-prettier": "^6.11.0",
     "eslint-config-standard": "^14.1.1",

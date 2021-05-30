@@ -3,10 +3,12 @@ import PropTypes from 'prop-types';
 
 import CloseButton from '../CloseButton/CloseButton';
 
+import {MESSAGES} from '../../../utils/const/messages';
+
 import './InfoPopup.css';
 
 function InfoPopup(props) {
-  const {isOpen, text = 'Что-то пошло не так...'} = props;
+  const {isOpen, text = MESSAGES.ERROR} = props;
 
   return (
     <div className={`popup ${isOpen && 'popup_opened'}`}>

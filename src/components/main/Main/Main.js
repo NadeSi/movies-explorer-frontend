@@ -16,7 +16,7 @@ import './Main.css';
 export function Main(props) {
   return (
     <main className="main">
-      <Header loggedIn={false} />
+      <Header loggedIn={props.loggedIn} />
       <Promo />
       <NavTab />
       <AboutProject />
@@ -28,6 +28,8 @@ export function Main(props) {
   );
 }
 
-Main.propTypes = {};
+Main.propTypes = {
+  loggedIn: PropTypes.bool,
+};
 
 export default withRouter(Main);
